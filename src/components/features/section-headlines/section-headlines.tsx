@@ -78,6 +78,7 @@ export const SectionHeadlines = (props: SectionHeadlinesPropsInterface) => {
   return (
     <div className={clsx(align === 'center' ? classes.containerCentered : null, className)}>
       {headline && <Typography {...computedHeadlineProps}>{headline}</Typography>}
+	<p>hardcode</p>
       {subline && <Typography {...computedSublineProps}>{subline}</Typography>}
       {body && <Markdown text={body} className={classes.text} />}
     </div>
